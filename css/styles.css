@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Google Fonts */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(186, 166, 96);
+  background: rgb(35, 47, 37);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2, h1 {
+  font-size: 20px;
+  font-weight: 800 !important;
+  margin:0;
+  line-height: 0.8;
+  margin-bottom: -20px;
+  
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  position: relative;
+  border-bottom: 1px solid rgb(186, 166, 96);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(186, 166, 96);
+  border-bottom: 1px solid rgb(186, 166, 96);
+  padding-left: 5px;
+}
+a:focus {
+  color: rgb(186, 166, 96);
+  border-bottom: 1px solid rgb(186, 166, 96);;
+  padding-left: 5px;
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+.main-text {
+  font-family: "PT Serif", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.main-text-small {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.logo {
+  background: url("../images/Redwood.svg") no-repeat;
+  display: flex;
+  background-position: top left, top left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 42px;
+  min-height: 150px;
+  padding: 0;
+  margin: 0;
+  ;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 42px;
+    height: auto;
+  }
+
+  .section {
+    display: block;
+    min-height: 0;
+  }
+
+  .column-section-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+
+  .col-section {
+    margin-bottom: 15vw;
+  }
+
+  .bio {
+    padding-top: 0;
+    font-size: 20px;
+    padding-right: 10%;
+  }
+}
+.section {
+  z-index: 1;
+  position: relative;
+  padding: 96px 0 96px 96px;
+  width: calc(100vw - 96px - 7em);
+  display: -webkit-box;
+  display: flex;
+  box-sizing: border-box;
+  min-height: 60vh;
+}
+
+.column-section {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
+.section-bio {
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.col-section {
+  width: 100%;
+  max-width: 382px;
+}
+
+.bio {
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: -0.45em;
+  max-width: 700px;
+}
+
+.list {
+  margin-top: 3.2em;
+}
+
+.list-item {
+  margin-top: 0.25em;
+  margin-bottom: 2em;
+  position: relative;
+  line-height: 1.5;
+}
+.list-item:last-child {
+  margin-bottom: -0.4em;
+}
+
+.tree-item {
+  margin-left: 35px;
+  line-height: 1;
+}
+
+.list-item .tree-item::before {
+  content: "\221F"; 
+  position: absolute;
+  left: -20px;
+  top: -4px; 
+  font-size: 22px; 
+}
+
+.another-tree-item {
+  margin-left: 35px;
+}
+
+.scrunch {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+.scrunch:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  position: fixed;
+  right: 96px;
+  bottom: 92px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: end;
+  align-items: flex-end;
+}
+
+.footer-links {
+  margin-top: 1em;
+  line-height: 1;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 48px 0 48px 48px;
+    width: calc(100vw - 48px - 7em);
+  }
+
+  .footer {
+    right: 48px;
+    bottom: 48px;
+  }
+}
+@media (max-width: 950px) {
+  .section {
+    padding: 7.5vw;
+    width: 100%;
+  }
+
+  .footer {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    padding: 0 7.5vw 7.5vw;
+    -webkit-box-align: start;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    display: inline;
+  }
+}
+
+.copyright {
+  font-weight: 100;
+  padding-top: 50px;
+}
+
+.notice-text {
+  font-size: small;
+  font-style: italic;
+  padding-top: 25px;
+  margin-bottom: -30px;
+}
