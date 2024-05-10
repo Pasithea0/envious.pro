@@ -88,6 +88,7 @@ a:focus {
   padding: 0;
   margin: 0;
   padding-bottom: 40px;
+  
 }
 
 @media (max-width: 600px) {
@@ -261,4 +262,25 @@ a:focus {
   font-style: italic;
   padding-top: 25px;
   margin-bottom: -30px;
+}
+
+.back-button {
+  border-bottom: 0 !important;
+  width: fit-content;
+}
+
+.back-button:hover {
+  border-bottom: 0 !important;
+  padding-left: 0 !important;
+}
+.back-button:focus {
+  border-bottom: 0 !important;
+  padding-left: 0 !important;
+}
+
+.divider {
+  padding-top: 40px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgb(186, 166, 96);
+  opacity: 30%;
 }
