@@ -4,23 +4,6 @@
   -apple-system-navigation-bar-tint: rgb(35, 47, 37);
 }
 
-html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  background-color: rgb(35, 47, 37);
-}
-
-body {
-  font-family: "PT Serif", serif;
-  font-weight: 400;
-  font-style: normal;
-  color: rgb(186, 166, 96);
-  background-color: rgb(35, 47, 37);
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 h2, h1 {
   font-size: 20px;
   font-weight: 800 !important;
@@ -28,6 +11,22 @@ h2, h1 {
   line-height: 0.8;
   margin-bottom: -20px;
   
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  background: rgb(35, 47, 37);
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(186, 166, 96);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
@@ -199,6 +198,7 @@ a:focus {
   pointer-events: none;
 }
 .scrunch:after {
+  background: rgb(35, 47, 37);
   content: "";
   position: absolute;
   top: 0;
