@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /* Google Fonts */
-:root {
-  -apple-system-navigation-bar-tint: rgb(35, 47, 37);
-}
-
 h2, h1 {
   font-size: 20px;
   font-weight: 800 !important;
@@ -15,6 +11,7 @@ h2, h1 {
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  -apple-system-navigation-bar-tint: rgb(35, 47, 37);
 }
 
 body {
@@ -289,6 +286,10 @@ a:focus {
 }
 
 /* Light mode stuff! */
+
+html.lightmode {
+  -apple-system-navigation-bar-tint: rgb(218, 208, 217) !important;
+}
 
 .logo-inverted {
   display: none;
