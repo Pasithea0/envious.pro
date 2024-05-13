@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const logoInverted = document.querySelector('.logo-inverted');
   const darkIcon = themeToggleBtn.querySelector('.dark-icon');
   const lightIcon = themeToggleBtn.querySelector('.light-icon');
+  const themeColorMetaTag = document.querySelector('meta[name="theme-color"]');
 
   function applyTheme(isDark) {
     if (isDark) {
@@ -13,12 +14,14 @@ document.addEventListener('DOMContentLoaded', () => {
       logo.style.display = 'block';
       logoInverted.style.display = 'none';
       bodyElement.classList.remove('lightmode');
+      themeColorMetaTag.setAttribute('content', '#232F25'); // Dark theme color
     } else {
       lightIcon.style.display = 'block';
       darkIcon.style.display = 'none';
       logo.style.display = 'none';
       logoInverted.style.display = 'block';
       bodyElement.classList.add('lightmode');
+      themeColorMetaTag.setAttribute('content', '#DAD0D9'); // Light theme color
     }
   }
 
