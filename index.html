@@ -3,6 +3,7 @@
         <script async="" src="js/script.js"></script>
         <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js"></script>	
         <script async="" src="js/markdown-1.js"></script>
+		<script src="js/switch.js"></script>
 
         <title>Envious</title>
         <meta name="keywords" content="Envious, music, jellifysh, pasithea, passithea0, envious.pro, github, sudo-flix, privacy, tools."/>
@@ -41,7 +42,8 @@
     </head>
 	<body>
 		<section class="section column-section section-bio">
-				<img src="images/redwood-logo.svg" class="logo">				
+			<img src="images/redwood-logo.svg" class="logo">
+			<img src="images/flower1.svg" class="logo-inverted">						
 			<p class="bio">
 				Hi, I’m Ivan—a self-taught web developer, designer, photographer, and musician. My curiosity probably stems from ADHD, which fuels my endless pursuit of new projects and skills. I'm deeply committed to online privacy and environmental conservation, as reflected in my development of privacy-focused tools and my diverse collection of nature photography. 
 			</p>	
@@ -92,10 +94,14 @@
 		<footer class="footer main-text main-text-small">
 			<a class="footer-links" href="mailto:contact@envious.pro">Email</a>
 			<a class="footer-links" href="https://github.com/Pasithea0">Githib</a>
-			<div class="scrunch" aria-hidden="true"></div>
-			<div class="copyright">
-				<p>copyright © 2024</p>
-			</div>
+			<div class="scrunch" aria-hidden="true"></div>	
+				<button id="theme-toggle-btn">
+					<img src="/images/moon.svg" class="dark-icon">
+					<img src="/images/sun.svg" class="light-icon">
+				</button>
+				<div class="copyright">
+					<p>copyright © 2024</p>
+				</div>				
 		</footer>
     </body>
 </html>

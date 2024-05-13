@@ -10,7 +10,6 @@ h2, h1 {
   margin:0;
   line-height: 0.8;
   margin-bottom: -20px;
-  
 }
 
 html {
@@ -92,7 +91,6 @@ a:focus {
   padding: 0;
   margin: 0;
   padding-bottom: 40px;
-  
 }
 
 @media (max-width: 600px) {
@@ -259,7 +257,7 @@ a:focus {
 
 .copyright {
   font-weight: 100;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .notice-text {
@@ -289,3 +287,91 @@ a:focus {
   border-bottom: 1px solid rgb(186, 166, 96);
   opacity: 30%;
 }
+
+/* Light mode stuff! */
+
+.logo-inverted {
+  display: none;
+  width: 85px;
+  min-height: 150px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+body.inverted .logo-inverted {
+  display: block;
+}
+
+body.inverted .logo {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .logo-inverted {
+    width: 85px;
+    height: auto;
+    padding-bottom: 50px;
+  }
+}
+
+#theme-toggle-btn {
+  position: relative;
+  border: none;
+  background: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 20px;
+  padding: 0;
+  transform: translateY(50px);
+}
+
+#theme-toggle-btn:hover {
+  cursor: pointer;
+}
+
+#theme-toggle-btn:focus {
+  outline: none;
+}
+
+#theme-toggle-btn img {
+  background-color: transparent;
+  width: 20px;
+}
+
+.logo, .logo-inverted {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  -webkit-touch-callout: none;
+  -khtml-touch-callout: none;
+  -moz-touch-callout: none;
+  -o-touch-callout: none;
+  touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body.lightmode {
+  background: rgb(218, 208, 217) !important;
+  color: rgb(72, 88, 150) !important;
+}
+
+body.lightmode a,
+body.lightmode a:hover,
+body.lightmode a:focus {
+  color: rgb(72, 88, 150) !important;
+  border-bottom: 1px solid rgb(72, 88, 150) !important;
+}
+
+body.lightmode .scrunch:after {
+  background: rgb(218, 208, 217) !important;
+}
+
+/* END light mode stuff! */
