@@ -11,7 +11,6 @@ h2, h1 {
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  -apple-system-navigation-bar-tint: rgb(35, 47, 37);
 }
 
 body {
@@ -287,8 +286,20 @@ a:focus {
 
 /* Light mode stuff! */
 
-html.lightmode {
-  -apple-system-navigation-bar-tint: rgb(218, 208, 217) !important;
+body.lightmode {
+  background: rgb(218, 208, 217) !important;
+  color: rgb(72, 88, 150) !important;
+}
+
+body.lightmode a,
+body.lightmode a:hover,
+body.lightmode a:focus {
+  color: rgb(72, 88, 150) !important;
+  border-bottom: 1px solid rgb(72, 88, 150) !important;
+}
+
+body.lightmode .scrunch:after {
+  background: rgb(218, 208, 217) !important;
 }
 
 .logo-inverted {
@@ -357,22 +368,6 @@ body.inverted .logo {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-body.lightmode {
-  background: rgb(218, 208, 217) !important;
-  color: rgb(72, 88, 150) !important;
-}
-
-body.lightmode a,
-body.lightmode a:hover,
-body.lightmode a:focus {
-  color: rgb(72, 88, 150) !important;
-  border-bottom: 1px solid rgb(72, 88, 150) !important;
-}
-
-body.lightmode .scrunch:after {
-  background: rgb(218, 208, 217) !important;
 }
 
 /* END light mode stuff! */
